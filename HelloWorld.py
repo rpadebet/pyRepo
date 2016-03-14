@@ -6,3 +6,5 @@ c = a*b
 c += a
 
 print(a, b, c)
+
+print "checking our how trial branch gets updated"
