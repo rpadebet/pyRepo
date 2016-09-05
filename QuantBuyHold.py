@@ -14,6 +14,8 @@ input_data = load_bars_from_yahoo(
     end=end,
 )
 
+#checking if I can merge this
+
 
 def initialize(context):
     context.has_ordered = False
