@@ -5,3 +5,28 @@ And see how this works
 It seems to work fine
 
 But we have to keep checking
+
+wd<-getwd()
+h_pow_df<-read.table("household_power_consumption.txt",header = FALSE,sep = ";",stringsAsFactors = FALSE,)
+summary(h_pow_df)
+str(h_pow_df)
+View(h_pow_df)
+nrow(h_pow_df)
+
+colname <- h_pow_df[1,]
+names(h_pow_df)<-colname
+h_pow_df_1 <- h_pow_df[2:nrow(h_pow_df),]
+
+h_pow_df_temp <- h_pow_df[,3:ncol(h_pow_df_1)]
+h_pow_df_2<-apply(h_pow_df_temp,2,as.numeric)
+View(h_pow_df_1)
+
+h_pow_df_3 <- as.Date(h_pow_df_1$Date)
+
+h_pow_date<-strptime(h_pow_df_1$Date,"%d/%m/%y")
+h_pow_time<-strptime(h_pow_df_1$Time,"%H:%M:%S")
+h_pow_vals <- apply(h_pow_df_1[,3:ncol(h_pow_df_1)],2,as.numeric)
+
+h_pow <- cbind(h_pow_date,h_pow_time,h_pow_vals)
+
+str(h_pow)
