@@ -1,1 +1,2 @@
-print "Creating file from github and seeing if it downloads"
+print "Creating file from github and seeing if it downloads fine"
+
