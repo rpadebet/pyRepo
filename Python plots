@@ -13,4 +13,3 @@ plt.xlabel('x axis label')
 plt.ylabel('y axis label')
 plt.title('Sine and Cosine')
 plt.legend(['Sine','Cosine'])
-plt.

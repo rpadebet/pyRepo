@@ -4,4 +4,4 @@ with open("text.txt","w") as my_file:
 if my_file.closed == False :
     my_file.close()
 
-print my_file.closed
+    print my_file.closed

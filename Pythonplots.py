@@ -6,6 +6,7 @@ y_sin=np.sin(x)
 y_cos=np.cos(x)
 
 # plot
+
 plt.plot(x,y_sin)
 plt.plot(x,y_cos)
 plt.xlabel('x axis label')
@@ -13,3 +14,4 @@ plt.ylabel('y axis label')
 plt.title('Sine and Cosine')
 plt.legend(['Sine','Cosine'])
 plt.show()
+
